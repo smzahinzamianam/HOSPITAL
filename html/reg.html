@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration</title>
+    <link rel="stylesheet" type="text/css" href="../css/reg.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <h2>Register as</h2>
+            <div class="button-box">              
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="doctor()">Admin</button>
+                <button type="button" class="toggle-btn" onclick="patient()"> User</button>
+
+            </div>
+            <div class="social-icons">
+                <img src="../image/fb.png">
+                <img src="../image/google.png">
+            </div>
+            
+            <form action="" id="doctor" class="input-group">
+                <input type="text" name="text" placeholder="first name">
+                <input type="text" name="text" placeholder="last name">
+                <input type="email" name="email" placeholder="email">
+                <input type="text" name="text"placeholder = "degree">
+                <input type="password" name=""placeholder = "enter password">
+                <input type="password" name=""placeholder = "confirm password">
+                
+                <button type="submit" class="submit-btn">Register</button>
+
+                
+
+            </form>
+            <form id = "patient"class="input-group">
+                <input type="text" name="text" placeholder="first name">
+                <input type="text"  name="text" placeholder="last name">
+                <input type="email"  name="text" placeholder="email">
+                <input type="gender" name="gender" placeholder = "gender">
+                <input type="password" name=""  placeholder = "enter password">
+                <input type="password" name=""  placeholder = "confirm password">
+                
+                <button type="submit" class="submit-btn">Register</button>
+
+                
+
+            </form>
+
+        
+
+
+        </div>
+
+    </div>
+    <script>
+        var x = document.getElementById("doctor");
+        var y = document.getElementById("patient");
+        var z = document.getElementById("btn");
+
+        function patient(){
+            x.style.left = "-450px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+
+        }
+        function doctor(){
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0px";
+        }
+    
+
+
+    </script>
+    
+    
+</body>
+</html>
